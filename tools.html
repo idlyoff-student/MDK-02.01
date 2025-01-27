@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Утилиты Kali Linux</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/kali-logo.png" alt="Kali Linux Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tools.html" class="active">Утилиты</a></li>
+                <li><a href="install.html">Установка</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tools-hero">
+            <div class="hero-content">
+                <h1 class="glitch-text">Инструменты Kali Linux</h1>
+                <p class="hero-subtitle">Мощный арсенал для тестирования безопасности</p>
+            </div>
+        </section>
+
+        <section class="tools-categories">
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">
+                    <i class="fas fa-layer-group"></i> Все
+                </button>
+                <button class="category-btn" data-category="network">
+                    <i class="fas fa-network-wired"></i> Сеть
+                </button>
+                <button class="category-btn" data-category="web">
+                    <i class="fas fa-globe"></i> Веб
+                </button>
+                <button class="category-btn" data-category="forensics">
+                    <i class="fas fa-search"></i> Форензика
+                </button>
+            </div>
+        </section>
+
+        <section class="tools-grid">
+            <div class="tool-card" data-category="network">
+                <div class="tool-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <div class="tool-content">
+                    <h3>Nmap</h3>
+                    <span class="tool-type">Сканер сети</span>
+                    <p>Мощный инструмент для сканирования сети и аудита безопасности. Позволяет обнаруживать хосты и сервисы в компьютерной сети.</p>
+                    <div class="tool-features">
+                        <span><i class="fas fa-check"></i> Сканирование портов</span>
+                        <span><i class="fas fa-check"></i> Определение ОС</span>
+                        <span><i class="fas fa-check"></i> Скрипты NSE</span>
+                    </div>
+                    <div class="tool-example">
+                        <div class="code-header">
+                            <code>nmap -sV -p 1-1000 192.168.1.1   --- Пример использования</code>
+                            <button class="copy-btn" onclick="copyToClipboard(this)"><i class="fas fa-copy"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="network">
+                <div class="tool-icon">
+                    <i class="fas fa-wave-square"></i>
+                </div>
+                <div class="tool-content">
+                    <h3>Wireshark</h3>
+                    <span class="tool-type">Анализатор пакетов</span>
+                    <p>Анализатор сетевого трафика для захвата и интерактивного просмотра содержимого сетевых пакетов.</p>
+                    <div class="tool-features">
+                        <span><i class="fas fa-check"></i> Анализ протоколов</span>
+                        <span><i class="fas fa-check"></i> Фильтрация пакетов</span>
+                        <span><i class="fas fa-check"></i> Декодирование</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="web">
+                <div class="tool-icon">
+                    <i class="fas fa-bug"></i>
+                </div>
+                <div class="tool-content">
+                    <h3>Metasploit</h3>
+                    <span class="tool-type">Фреймворк тестирования</span>
+                    <p>Платформа для разработки, тестирования и использования эксплойтов. Содержит базу данных проверенных эксплойтов.</p>
+                    <div class="tool-features">
+                        <span><i class="fas fa-check"></i> База эксплойтов</span>
+                        <span><i class="fas fa-check"></i> Модульная структура</span>
+                        <span><i class="fas fa-check"></i> Payload генератор</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="network">
+                <div class="tool-icon">
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <div class="tool-content">
+                    <h3>Aircrack-ng</h3>
+                    <span class="tool-type">Аудит Wi-Fi сетей</span>
+                    <p>Набор инструментов для оценки безопасности Wi-Fi сетей, включая анализ пакетов и тестирование ключей.</p>
+                    <div class="tool-features">
+                        <span><i class="fas fa-check"></i> WEP/WPA взлом</span>
+                        <span><i class="fas fa-check"></i> Мониторинг сетей</span>
+                        <span><i class="fas fa-check"></i> Инъекция пакетов</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="forensics">
+                <div class="tool-icon">
+                    <i class="fas fa-key"></i>
+                </div>
+                <div class="tool-content">
+                    <h3>John the Ripper</h3>
+                    <span class="tool-type">Взлом паролей</span>
+                    <p>Инструмент для подбора паролей, поддерживающий различные алгоритмы хеширования.</p>
+                    <div class="tool-features">
+                        <span><i class="fas fa-check"></i> Множество форматов</span>
+                        <span><i class="fas fa-check"></i> GPU ускорение</span>
+                        <span><i class="fas fa-check"></i> Гибкие правила</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="web">
+                <div class="tool-icon">
+                    <i class="fas fa-spider"></i>
+                </div>
+                <div class="tool-content">
+                    <h3>Burp Suite</h3>
+                    <span class="tool-type">Тестирование веб-приложений</span>
+                    <p>Интегрированная платформа для проведения аудита безопасности веб-приложений.</p>
+                    <div class="tool-features">
+                        <span><i class="fas fa-check"></i> Прокси-сервер</span>
+                        <span><i class="fas fa-check"></i> Сканер уязвимостей</span>
+                        <span><i class="fas fa-check"></i> Интрудер</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="tools.html">Инструменты</a></li>
+                    <li><a href="install.html">Установка</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Сообщество</h3>
+                <div class="social-links">
+                    <a href="https://github.com/offensive-security/kali-linux" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/kalilinux" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/c/kalilinux" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Документация Kali Linux. Создано для образовательных целей.</p>
+        </div>
+    </footer>
+
+    <script>
+        function copyToClipboard(button) {
+            const codeElement = button.closest('.tool-example').querySelector('code');
+            const textArea = document.createElement('textarea');
+            textArea.value = codeElement.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            
+            const icon = button.querySelector('i');
+            icon.className = 'fas fa-check';
+            
+            setTimeout(() => {
+                icon.className = 'fas fa-copy';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

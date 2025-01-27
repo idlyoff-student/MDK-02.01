@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Установка Kali Linux</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/kali-logo.png" alt="Kali Linux Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tools.html">Утилиты</a></li>
+                <li><a href="install.html" class="active">Установка</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="install-hero">
+            <div class="hero-content">
+                <h1 class="glitch-text">Установка Kali Linux</h1>
+                <p class="hero-subtitle">Пошаговое руководство по установке</p>
+            </div>
+        </section>
+
+        <br><br>
+        <section class="requirements-section">
+            <h2 class="section-title">Системные требования</h2>
+            <div class="requirements-grid">
+                <div class="requirement-card">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Процессор</h3>
+                    <p>x64 (32-bit не поддерживается)</p>
+                </div>
+                <div class="requirement-card">
+                    <i class="fas fa-memory"></i>
+                    <h3>Оперативная память</h3>
+                    <p>Минимум 2 ГБ (рекомендуется 4 ГБ)</p>
+                </div>
+                <div class="requirement-card">
+                    <i class="fas fa-hdd"></i>
+                    <h3>Место на диске</h3>
+                    <p>Минимум 20 ГБ</p>
+                </div>
+                <div class="requirement-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Сеть</h3>
+                    <p>Сетевое подключение</p><br>
+                    <p>*100 Мбит/с</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="install-options">
+            <div class="install-grid">
+                <div class="install-card virtual">
+                    <div class="install-header">
+                        <i class="fas fa-desktop"></i>
+                        <h2>Установка на виртуальную машину</h2>
+                    </div>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Подготовка</h3>
+                                <p>Скачайте VirtualBox или VMware и образ Kali Linux</p><br>
+                                <div class="step-details">
+                                    <a href="https://www.virtualbox.org/" class="btn btn-secondary" target="_blank">
+                                        <i class="fas fa-download"></i> VirtualBox
+                                    </a>
+                                    <a href="https://www.kali.org/get-kali/" class="btn btn-secondary" target="_blank">
+                                        <i class="fas fa-download"></i> Kali Linux ISO
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Создание виртуальной машины</h3>
+                                <p>Выделите минимум 2 ГБ ОЗУ и 20 ГБ места на диске</p>
+                                <ul class="step-checklist">
+                                    <li><i class="fas fa-check"></i> Тип системы: Linux</li>
+                                    <li><i class="fas fa-check"></i> Версия: Debian 64-bit</li>
+                                    <li><i class="fas fa-check"></i> RAM: 2048 МБ или больше</li>
+                                    <li><i class="fas fa-check"></i> Жесткий диск: 20 ГБ или больше</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Установка системы</h3>
+                                <p>Загрузите образ и следуйте инструкциям установщика</p>
+                                <div class="installation-tips">
+                                    <h4>Советы:</h4>
+                                    <ul>
+                                        <li><i class="fas fa-info-circle"></i> Выберите язык и раскладку клавиатуры</li>
+                                        <li><i class="fas fa-info-circle"></i> Настройте сеть</li>
+                                        <li><i class="fas fa-info-circle"></i> Создайте разделы диска</li>
+                                        <li><i class="fas fa-info-circle"></i> Установите загрузчик GRUB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="install-card physical">
+                    <div class="install-header">
+                        <i class="fas fa-laptop"></i>
+                        <h2>Установка на физическое устройство</h2>
+                    </div>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Подготовка носителя</h3>
+                                <p>Создайте загрузочную USB-флешку с помощью Rufus или Etcher</p><br>
+                                <div class="step-details">
+                                    <a href="https://rufus.ie/" class="btn btn-secondary" target="_blank">
+                                        <i class="fas fa-download"></i> Rufus
+                                    </a>
+                                    <a href="https://www.balena.io/etcher/" class="btn btn-secondary" target="_blank">
+                                        <i class="fas fa-download"></i> Etcher
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Настройка BIOS/UEFI</h3>
+                                <p>Включите загрузку с USB и отключите Secure Boot</p>
+                                <div class="warning-box">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <p>Внимание: Настройки BIOS/UEFI могут отличаться в зависимости от производителя</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Установка</h3>
+                                <p>Загрузитесь с USB и следуйте инструкциям установщика</p>
+                                <div class="installation-tips">
+                                    <h4>Важные моменты:</h4>
+                                    <ul>
+                                        <li><i class="fas fa-info-circle"></i> Сделайте резервную копию данных</li>
+                                        <li><i class="fas fa-info-circle"></i> Выберите правильный диск для установки</li>
+                                        <li><i class="fas fa-info-circle"></i> Настройте разделы под свои нужды</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="tools.html">Инструменты</a></li>
+                    <li><a href="install.html">Установка</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Сообщество</h3>
+                <div class="social-links">
+                    <a href="https://github.com/offensive-security/kali-linux" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/kalilinux" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/c/kalilinux" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Документация Kali Linux. Создано для образовательных целей.</p>
+        </div>
+    </footer>
+</body>
+</html>
