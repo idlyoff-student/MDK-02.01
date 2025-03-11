@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.25, maximum-scale=5.0">
+    <meta name="theme-color" content="#1a472a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <title>Инструкция по установке на iOS - Расписание Техникума</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .instruction-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .instruction-step {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background-color: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 5px 25px var(--shadow);
+            position: relative;
+            border-left: 5px solid var(--medium-green);
+            transition: transform 0.3s ease;
+        }
+        
+        .instruction-step:hover {
+            transform: translateY(-10px);
+        }
+        
+        .instruction-step h3 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            color: var(--dark-green);
+        }
+        
+        .step-number {
+            background: var(--gradient-green);
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(42, 98, 61, 0.3);
+        }
+        
+        .instruction-image {
+            max-width: 300px;
+            margin: 1.5rem 0;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px var(--shadow);
+        }
+        
+        .back-to-home {
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        .note {
+            background-color: var(--very-light-green);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--accent-green);
+            margin-top: 3rem;
+        }
+        
+        .note h3 {
+            color: var(--dark-green);
+            display: flex;
+            align-items: center;
+        }
+        
+        .note h3 i {
+            margin-right: 10px;
+            color: var(--medium-green);
+        }
+        
+        .page-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100px;
+            height: 3px;
+            background-color: var(--medium-green);
+            border-radius: 2px;
+        }
+        
+        .ios-instruction-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(var(--medium-gray) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        /* Адаптивные стили для инструкции iOS */
+        @media (max-width: 768px) {
+            .instruction-content {
+                padding: 1.5rem 1rem;
+            }
+            
+            .instruction-step {
+                padding: 1.5rem;
+            }
+            
+            .page-title {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .instruction-content {
+                padding: 1rem;
+            }
+            
+            .instruction-step {
+                padding: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .instruction-step h3 {
+                font-size: 1.1rem;
+                flex-wrap: wrap;
+            }
+            
+            .step-number {
+                width: 35px;
+                height: 35px;
+                font-size: 0.9rem;
+            }
+            
+            .note {
+                padding: 1.2rem;
+            }
+            
+            .page-title {
+                font-size: 1.5rem;
+            }
+            
+            .page-title::after {
+                width: 60px;
+            }
+            
+            .back-to-home .btn {
+                display: block;
+                width: 100%;
+                max-width: 280px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Логотип Расписание Техникума" class="logo-img">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html#features">Функции</a></li>
+                    <li><a href="index.html#reviews">Отзывы</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="ios-instruction-bg"></div>
+        <div class="container">
+            <div class="instruction-content">
+                <h1 class="page-title">Инструкция по установке на iOS</h1>
+                <p>Так как приложение не опубликовано в App Store, для установки на устройства iOS необходимо выполнить несколько дополнительных шагов:</p>
+                
+                <div class="instruction-step">
+                    <h3><span class="step-number">1</span> Откройте Safari</h3>
+                    <p>Для начала установки необходимо использовать браузер Safari. Другие браузеры не поддерживают установку веб-приложений на iOS.</p>
+                    <div class="step-details">
+                        <p><i class="fas fa-info-circle"></i> Safari является стандартным браузером для всех устройств iOS. Найдите его иконку в главном меню вашего устройства.</p>
+                    </div>
+                </div>
+                
+                <div class="instruction-step">
+                    <h3><span class="step-number">2</span> Перейдите на веб-версию</h3>
+                    <p>Откройте веб-версию приложения "Расписание Техникума" по адресу: <a href="https://app.tehnikum.ru">https://app.tehnikum.ru</a></p>
+                    <div class="step-details">
+                        <p><i class="fas fa-link"></i> Вы также можете воспользоваться QR-кодом для быстрого перехода на сайт приложения.</p>
+                    </div>
+                </div>
+                
+                <div class="instruction-step">
+                    <h3><span class="step-number">3</span> Нажмите на кнопку "Поделиться"</h3>
+                    <p>Внизу экрана (iPhone) или вверху справа (iPad) найдите и нажмите на кнопку "Поделиться" <i class="fas fa-share-alt"></i></p>
+                    <!-- <img src="images/ios-share.jpg" alt="Кнопка Поделиться на iOS" class="instruction-image"> -->
+                    <div class="step-details">
+                        <p><i class="fas fa-info-circle"></i> Если вы не видите кнопку "Поделиться", попробуйте пролистать страницу вверх или прикоснуться к экрану, чтобы отобразить панель инструментов браузера.</p>
+                    </div>
+                </div>
+                
+                <div class="instruction-step">
+                    <h3><span class="step-number">4</span> Выберите "На экран «Домой»"</h3>
+                    <p>В открывшемся меню прокрутите вниз и найдите опцию "На экран «Домой»" (Add to Home Screen).</p>
+                    <!-- <img src="images/ios-add-home.jpg" alt="Добавить на экран Домой" class="instruction-image"> -->
+                    <div class="step-details">
+                        <p><i class="fas fa-arrows-alt-v"></i> В меню "Поделиться" может быть много опций. Прокрутите вниз, чтобы найти нужную.</p>
+                    </div>
+                </div>
+                
+                <div class="instruction-step">
+                    <h3><span class="step-number">5</span> Подтвердите добавление</h3>
+                    <p>Введите название для приложения или оставьте предложенное. Затем нажмите "Добавить" в правом верхнем углу.</p>
+                    <!-- <img src="images/ios-confirm.jpg" alt="Подтверждение добавления на iOS" class="instruction-image"> -->
+                    <div class="step-details">
+                        <p><i class="fas fa-pencil-alt"></i> Рекомендуем использовать название "Расписание Техникума" для удобства поиска приложения на вашем устройстве.</p>
+                    </div>
+                </div>
+                
+                <div class="instruction-step">
+                    <h3><span class="step-number">6</span> Готово!</h3>
+                    <p>Приложение "Расписание Техникума" теперь доступно на вашем домашнем экране. Вы можете открыть его как обычное приложение.</p>
+                    <div class="step-details">
+                        <p><i class="fas fa-check-circle"></i> Теперь вы можете быстро получать доступ к расписанию, новостям и другой информации учебного заведения.</p>
+                    </div>
+                </div>
+                
+                <div class="note">
+                    <h3><i class="fas fa-exclamation-circle"></i> Важная информация</h3>
+                    <p>Приложение, установленное таким образом, является веб-приложением и требует подключения к интернету для работы. Это позволяет всегда получать самую актуальную информацию без необходимости обновления приложения.</p>
+                </div>
+                
+                <div class="back-to-home">
+                    <a href="index.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Вернуться на главную</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Логотип Расписание Техникума" class="footer-logo-img">
+                    </a>
+                    <p>Ваше расписание всегда под рукой!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Навигация</h3>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="index.html#features">Функции</a></li>
+                            <li><a href="index.html#reviews">Отзывы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-legal">
+                        <h3>Документы</h3>
+                        <ul>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Условия использования</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Краснодарский кооперативный техникум имени крайпотребсоюза. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

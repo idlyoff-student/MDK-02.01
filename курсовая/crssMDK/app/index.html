@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#1a472a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <title>Расписание Техникума - Мобильное приложение</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="images/logo.png" alt="Логотип Расписание Техникума" class="logo-img">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#features">Функции</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">Новинка!</div>
+                <h1>Ваше расписание <span>всегда под рукой!</span></h1>
+                <p>Смотрите расписание пар, расписание звонков и новости техникума в одном месте. Удобный интерфейс и мгновенные обновления.</p>
+                <div class="download-buttons">
+                    <a href="#" class="btn btn-primary"><i class="fab fa-android"></i> Скачать для Android</a>
+                    <a href="ios-install.html" class="btn btn-secondary"><i class="fab fa-apple"></i> Инструкция для iOS</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <img src="images/app-screenshot.png" alt="Скриншот приложения" class="mockup">
+                    <div class="mockup-reflection"></div>
+                </div>
+                <div class="floating-icons">
+                    <div class="floating-icon icon-1"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="floating-icon icon-2"><i class="fas fa-clock"></i></div>
+                    <div class="floating-icon icon-3"><i class="fas fa-bell"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f5f5f5" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,186.7C384,181,480,139,576,128C672,117,768,139,864,144C960,149,1056,139,1152,122.7C1248,107,1344,85,1392,74.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Что вы получаете</span>
+                <h2>Функции приложения</h2>
+                <p class="section-description">Наше приложение предлагает множество полезных функций для удобства студентов и преподавателей</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Расписание пар</h3>
+                    <p>Актуальное расписание занятий на каждый день с возможностью просмотра на неделю вперед.</p>
+                    <div class="feature-detail">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Расписание звонков</h3>
+                    <p>Точное время начала и окончания всех пар, включая изменения в расписании звонков.</p>
+                    <div class="feature-detail">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Новости техникума</h3>
+                    <p>Все важные объявления и новости техникума всегда доступны в приложении.</p>
+                    <div class="feature-detail">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feature-dots-bg"></div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Что говорят студенты</span>
+                <h2>Отзывы пользователей</h2>
+                <p class="section-description">Более 500 студентов и преподавателей уже используют наше приложение</p>
+            </div>
+            
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <div class="review-profile">
+                        <div class="review-avatar">
+                            <span>И</span>
+                        </div>
+                        <div class="review-user">
+                            <div class="review-author">Иван</div>
+                            <div class="review-info">Студент 2 курса</div>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Очень удобное приложение! Теперь всегда знаю, какие пары у меня сегодня, не нужно искать расписание на сайте. Моментальные уведомления о заменах спасают от опозданий."</p>
+                    <div class="review-date">15 февраля 2023</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-profile">
+                        <div class="review-avatar">
+                            <span>М</span>
+                        </div>
+                        <div class="review-user">
+                            <div class="review-author">Мария</div>
+                            <div class="review-info">Студентка 3 курса</div>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Приложение сильно упростило мою студенческую жизнь. Особенно нравится функция уведомлений о заменах! Теперь никогда не пропускаю важные объявления и изменения в расписании."</p>
+                    <div class="review-date">3 марта 2023</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-profile">
+                        <div class="review-avatar">
+                            <span>А</span>
+                        </div>
+                        <div class="review-user">
+                            <div class="review-author">Алексей</div>
+                            <div class="review-info">Студент 1 курса</div>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Наконец-то не нужно спрашивать у одногруппников, какие пары завтра. Всё в одном приложении! Интерфейс очень понятный, даже для первокурсника. Рекомендую всем студентам!"</p>
+                    <div class="review-date">27 апреля 2023</div>
+                </div>
+            </div>
+            
+            <div class="reviews-nav">
+                <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="nav-dots">
+                    <span class="nav-dot active"></span>
+                    <span class="nav-dot"></span>
+                    <span class="nav-dot"></span>
+                </div>
+                <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Готовы упростить свою студенческую жизнь?</h2>
+                <p>Скачайте приложение прямо сейчас и будьте в курсе всех изменений в расписании!</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary"><i class="fab fa-android"></i> Скачать для Android</a>
+                    <a href="ios-install.html" class="btn btn-secondary"><i class="fab fa-apple"></i> Инструкция для iOS</a>
+                </div>
+            </div>
+            <div class="cta-image">
+                <img src="images/app-screenshot.png" alt="Скриншот приложения" class="mockup-small">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home">
+                        <img src="images/logo.png" alt="Логотип Расписание Техникума" class="footer-logo-img">
+                    </a>
+                    <p>Ваше расписание всегда под рукой!</p>
+                    <div class="social-links">
+                        <a href="https://vk.com/public218711190"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Навигация</h3>
+                        <ul>
+                            <li><a href="#home">Главная</a></li>
+                            <li><a href="#features">Функции</a></li>
+                            <li><a href="#reviews">Отзывы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-legal">
+                        <h3>Документы</h3>
+                        <ul>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Условия использования</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Краснодарский кооперативный техникум крайпотребсоюза. Все права защищены.</p>
+                <p>with ❤️ by whyhate, wh1teRose</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

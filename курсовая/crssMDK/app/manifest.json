@@ -1,0 +1,17 @@
+{
+    "name": "Расписание Техникума",
+    "short_name": "Расписание",
+    "description": "Мобильное приложение для просмотра расписания техникума",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1a472a",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "images/logo.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ]
+} 
