@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Свяжитесь с КомпСервис - контактная информация, форма обратной связи, адрес и карта проезда">
+  <meta name="keywords" content="компьютерный сервис, контакты, обратная связь, адрес, телефон">
+  <title>Контакты - КомпСервис</title>
+  <link rel="icon" href="images/logosweater.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="КомпСервис" class="logo-img">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="contact.html" class="active">Контакты</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Контакты</h1>
+      <p>Свяжитесь с нами для получения консультации или заказа услуг</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-page">
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-info animate-on-scroll">
+          <h2>Наши контакты</h2>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Адрес</h3>
+              <p>г. Москва, ул. Примерная, д. 123, офис 456</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h3>Телефон</h3>
+              <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:info@kompservice.ru">info@kompservice.ru</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h3>Часы работы</h3>
+              <p>Пн-Пт: 9:00 - 20:00</p>
+              <p>Сб: 10:00 - 18:00</p>
+              <p>Вс: Выходной</p>
+            </div>
+          </div>
+          <div class="social-media">
+            <h3>Мы в социальных сетях</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-vk"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-container animate-on-scroll">
+          <h2>Напишите нам</h2>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Ваш email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Ваш телефон (необязательно)</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="subject">Тема</label>
+              <select id="subject" name="subject">
+                <option value="consultation">Консультация</option>
+                <option value="repair">Ремонт компьютера</option>
+                <option value="service">Сервисное обслуживание</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Отправить сообщение</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="map-container animate-on-scroll">
+        <h2>Как нас найти</h2>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.397087990428!2d37.62053387680799!3d55.75362997326946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrRgNC10LzQu9GM!5e0!3m2!1sru!2sru!4v1616683184539!5m2!1sru!2sru" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="directions">
+          <h3>Как добраться</h3>
+          <p><strong>На метро:</strong> Станция "Примерная", выход №3, далее пешком 5 минут.</p>
+          <p><strong>На автомобиле:</strong> Используйте навигатор, рядом с офисом есть платная парковка.</p>
+        </div>
+      </div>
+
+      <div class="faq animate-on-scroll">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Сколько времени занимает ремонт?</h3>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <p>Время ремонта зависит от сложности проблемы. Простые неисправности мы устраняем в течение 1-2 часов, более сложные случаи могут занять от 1 до 3 дней. Точные сроки мы сообщаем после диагностики.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Предоставляете ли вы гарантию на ремонт?</h3>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <p>Да, мы предоставляем гарантию на все виды выполненных работ сроком от 1 до 12 месяцев в зависимости от типа услуги. На заменяемые комплектующие действует гарантия производителя.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Выезжаете ли вы на дом для ремонта?</h3>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <p>Да, мы предоставляем услугу выезда мастера на дом или в офис. Стоимость выезда в пределах города составляет 500 рублей. При заказе услуг на сумму от 3000 рублей выезд осуществляется бесплатно.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Как происходит оплата услуг?</h3>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <p>Мы принимаем оплату наличными, банковскими картами и безналичным расчетом. Для юридических лиц предоставляем полный пакет документов. Оплата производится после выполнения работ и проверки работоспособности.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Что делать, если компьютер не включается?</h3>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <p>Если компьютер не включается, проверьте следующее:</p>
+                <ul>
+                  <li>Подключен ли кабель питания к розетке и компьютеру</li>
+                  <li>Работает ли розетка (проверьте, подключив другое устройство)</li>
+                  <li>Включен ли переключатель на блоке питания (обычно на задней панели)</li>
+                </ul>
+                <p>Если эти проверки не помогли, рекомендуем обратиться к нам для диагностики. Возможно, проблема в блоке питания, материнской плате или других компонентах.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Как часто нужно проводить профилактику компьютера?</h3>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <p>Рекомендуем проводить профилактическую чистку компьютера от пыли и замену термопасты каждые 12-18 месяцев. Для ноутбуков этот срок может быть сокращен до 6-12 месяцев, особенно при интенсивном использовании. Регулярная профилактика продлевает срок службы техники и предотвращает перегрев.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Можно ли восстановить данные с неисправного жесткого диска?</h3>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <p>В большинстве случаев данные можно восстановить. Успех восстановления зависит от типа повреждения:</p>
+                <ul>
+                  <li>Логические повреждения (удаленные файлы, форматирование) - высокая вероятность восстановления</li>
+                  <li>Программные сбои - средняя вероятность восстановления</li>
+                  <li>Физические повреждения - вероятность восстановления зависит от степени повреждения</li>
+                </ul>
+                <p>Мы проводим бесплатную диагностику и сообщаем о возможности восстановления данных и стоимости услуги.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-content text-center animate-on-scroll">
+        <h3>Нужна срочная помощь?</h3>
+        <p>Позвоните нам прямо сейчас или оставьте заявку на сайте!</p><br>
+        <a href="tel:+74951234567" class="btn">Позвонить</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>КомпСервис</h3>
+          <p>Профессиональный ремонт и обслуживание компьютеров</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-vk"></i></a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <ul class="footer-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 КомпСервис. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html> 

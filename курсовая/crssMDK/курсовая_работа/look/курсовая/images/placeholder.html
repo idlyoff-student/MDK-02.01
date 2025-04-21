@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заглушки изображений - КомпСервис</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0066cc;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    
+    .img-placeholder {
+      border: 2px dashed #ccc;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    
+    h2 {
+      margin-top: 0;
+      color: #0066cc;
+    }
+    
+    .pseudo-img {
+      background-color: #eee;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #666;
+      border-radius: 5px;
+    }
+    
+    .hero-placeholder .pseudo-img {
+      height: 400px;
+      background: linear-gradient(to right, #0066cc, #004080);
+      color: white;
+    }
+    
+    .about-placeholder .pseudo-img {
+      background: linear-gradient(to right, #66cc99, #339966);
+      color: white;
+    }
+    
+    .cta-placeholder .pseudo-img {
+      height: 200px;
+      background: linear-gradient(to right, #cc6633, #993300);
+      color: white;
+    }
+    
+    p {
+      margin-bottom: 10px;
+    }
+    
+    ul {
+      margin-left: 20px;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0066cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <h1>Требуемые изображения для сайта КомпСервис</h1>
+  
+  <div class="container">
+    <div class="img-placeholder hero-placeholder">
+      <h2>1. hero-bg.jpg</h2>
+      <div class="pseudo-img">HERO BACKGROUND IMAGE</div>
+      <p><strong>Описание:</strong> Фоновое изображение для главной страницы (заголовок).</p>
+      <p><strong>Рекомендуемый размер:</strong> 1920x1080 пикселей</p>
+      <p><strong>Содержание:</strong> Современное рабочее пространство с компьютерами, рабочий стол с монитором и клавиатурой или профессионал, работающий за компьютером.</p>
+      <p><strong>Применение:</strong> Будет использоваться как фоновое изображение в секции hero на главной странице с наложенным темным градиентом.</p>
+      <p><strong>Советы:</strong></p>
+      <ul>
+        <li>Изображение должно быть хорошего качества, но оптимизировано для веба</li>
+        <li>Выберите изображение с нейтральными цветами, чтобы текст на нем был хорошо читаем</li>
+        <li>Избегайте слишком перегруженных деталями изображений</li>
+      </ul>
+    </div>
+    
+    <div class="img-placeholder about-placeholder">
+      <h2>2. about-bg.jpg</h2>
+      <div class="pseudo-img">ABOUT BACKGROUND IMAGE</div>
+      <p><strong>Описание:</strong> Фоновое изображение для секции "О нас".</p>
+      <p><strong>Рекомендуемый размер:</strong> 1600x900 пикселей</p>
+      <p><strong>Содержание:</strong> Команда IT-специалистов, офисное пространство компьютерного сервиса или техник, работающий с компьютерными компонентами.</p>
+      <p><strong>Применение:</strong> Будет использоваться как фоновое изображение в секции "О нас" с низкой непрозрачностью.</p>
+      <p><strong>Советы:</strong></p>
+      <ul>
+        <li>Выберите светлое изображение, так как оно будет показано с низкой непрозрачностью</li>
+        <li>Изображение должно быть ненавязчивым, чтобы не отвлекать от текста</li>
+        <li>Предпочтительны изображения, демонстрирующие профессионализм и командную работу</li>
+      </ul>
+    </div>
+    
+    <div class="img-placeholder cta-placeholder">
+      <h2>3. cta-bg.jpg</h2>
+      <div class="pseudo-img">CTA BACKGROUND IMAGE</div>
+      <p><strong>Описание:</strong> Фоновое изображение для секции "Свяжитесь с нами" (Call to Action).</p>
+      <p><strong>Рекомендуемый размер:</strong> 1600x600 пикселей</p>
+      <p><strong>Содержание:</strong> Крупный план компьютерных комплектующих, материнская плата, процессор или человек, работающий за компьютером.</p>
+      <p><strong>Применение:</strong> Будет использоваться как фоновое изображение в секции CTA с наложенным темным градиентом.</p>
+      <p><strong>Советы:</strong></p>
+      <ul>
+        <li>Изображение должно быть контрастным, чтобы текст на нем хорошо читался</li>
+        <li>Предпочтительно изображение с технологической тематикой</li>
+        <li>Выбирайте изображение, которое вызывает доверие и профессионализм</li>
+      </ul>
+    </div>
+  </div>
+  
+  <footer>
+    <p>Эта страница является руководством по добавлению изображений для сайта КомпСервис.</p>
+    <p>После добавления всех необходимых изображений в директорию, этот файл можно удалить.</p>
+    <a href="../index.html" class="btn">Вернуться на главную страницу</a>
+  </footer>
+</body>
+</html> 
