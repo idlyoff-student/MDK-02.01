@@ -1,0 +1,41 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #e6d5f5;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 350px;
+    height: 650px;
+    background: radial-gradient(circle at center, #c852ff, #ae00ff);
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+}
+
+.header .logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+}
+
+.header .text-big {
+    margin: 16px 0 4px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.header .text-small {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+}
