@@ -46,7 +46,7 @@
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    text-transform: lowercase;
+    text-transform: bold;
   }
 
   .back-link::before {
@@ -68,14 +68,14 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #c08a7b;
-    margin-bottom: 6px;
+    margin-bottom: 1px;
   }
 
   .title-row {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin-bottom: 6px;
+    margin-bottom: 1px;
   }
 
   .title {
@@ -95,7 +95,7 @@
   .stars {
     margin-bottom: 14px;
     color: #ff8a47;
-    font-size: 16px;
+    font-size: 32px;
     letter-spacing: 4px;
   }
 
