@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form1">
+         <FORM> 
+            <P>Фамилия: <INPUT TYPE=text SIZE=30><BR> 
+            Адрес: <INPUT TYPE=TEXT SIZE=30></P> 
+            <P>Пол: <INPUT TYPE=RADIO>М <INPUT TYPE=RADIO>Ж</P> 
+         </FORM>
+    </div> 
+    <div class="form2">
+        <FORM> 
+            <P>Фамилия:<INPUT TYPE=text SIZE=30></P> 
+            <P>Какой язык вы изучали?</P> 
+            <INPUT TYPE=CHECKBOX><I>английский </I><BR> 
+            <INPUT TYPE=CHECKBOX><I>немецкий</I><BR> 
+            <INPUT TYPE=CHECKBOX><I>французский </I><BR> 
+            <INPUT TYPE=CHECKBOX><I>другой </I><BR> 
+        </FORM>
+    </div>
+    <div class="form3">
+        <FORM> 
+            <INPUT TYPE=text SIZE=30><BR>Адрес: <INPUT TYPE=TEXT SIZE=30><BR> 
+            <P>Каким браузером вы пользуетесь?</P> 
+            <SELECT> 
+            <OPTION> Internet Explorer 
+            <OPTION> Netscape Navigator 
+            <OPTION>Opera 
+            </SELECT> 
+        </FORM>
+    </div>
+    <div>
+        <FORM> 
+            <P>Ваши пожелания по организации сайта?</P> 
+            <TEXTAREA>Введите текст</TEXTAREA> 
+            <INPUT TYPE=”SUBMIT” VALUE="Отправить"> 
+            <INPUT TYPE=”RESET” VALUE="Очистить"> 
+        </FORM> 
+
+        <div class="guestbook-wrapper">
+            <div class="guestbook-inner">
+                <form>
+                    <div class="guestbook-title">Гостевая книга</div>
+
+                    <div class="guestbook-top">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text">
+                                    <input type="text">
+                                </td>
+                                <td class="guestbook-labels" style="padding-left: 15px;">
+                                    - Фамилия<br>
+                                    - Имя
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div>
+                        <div class="guestbook-section-title">Ваши пожелания по работе фирмы:</div>
+                        <textarea class="guestbook-textarea">Введите здесь свое сообщение</textarea>
+                    </div>
+
+                    <div>
+                        <div class="guestbook-section-title">Укажите товары, наиболее вам понравившиеся:</div>
+                        <select class="guestbook-products-select">
+                            <option>Принтеры</option>
+                            <option>Сканеры</option>
+                        </select>
+                        <br>
+                    </div>
+
+                    <div class="guestbook-buttons">
+                        <input type="submit" value="Отправить">
+                        <input type="reset" value="Сброс">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="order-form-wrapper">
+            <div class="order-form-inner">
+                <form>
+                    <div class="order-form-title">Бланк заказа</div>
+
+                    <div class="order-form-top">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text">
+                                    <input type="text">
+                                    <input type="text">
+                                </td>
+                                <td class="order-form-labels" style="padding-left: 15px;">
+                                    - Фамилия<br><br>
+                                    - Адрес<br><br>
+                                    - Телефон
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="order-products-title">Наши товары</div>
+
+                    <div class="order-products-row">
+                        <div class="order-product-box"></div>
+                        <div class="order-product-box"></div>
+                        <div class="order-product-box"></div>
+                    </div>
+
+                    <div class="order-products-checks">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+
+                    <div class="order-sum-title">Сумма, которой вы располагаете</div>
+
+                    <div class="order-sum-options">
+                        <input type="radio" name="sum" value="100"> $100
+                        <input type="radio" name="sum" value="500"> $500
+                        <input type="radio" name="sum" value="1000"> $1000
+                    </div>
+
+                    <div class="order-buttons">
+                        <input type="submit" value="Отправить">
+                        <input type="reset" value="Сброс">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
