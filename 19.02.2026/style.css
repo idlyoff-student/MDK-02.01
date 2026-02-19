@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", serif;
+    background-color: #c0c0c0;
+    color: #000080;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.page-wrapper {
+    width: 760px;
+    margin: 0 auto;
+    padding: 10px 0 30px;
+}
+
+.form-block {
+    width: 420px;
+    margin: 15px auto;
+    padding: 10px 15px;
+    border: 2px ridge #808080;
+    background-color: #f0f0f0;
+}
+
+.form-block p {
+    margin: 6px 0;
+}
+
+input[type="text"],
+textarea,
+select {
+    border: 1px solid #808080;
+    padding: 2px 4px;
+    font-family: inherit;
+    font-size: 12px;
+    background-color: #ffffff;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    font-family: inherit;
+    font-size: 12px;
+    padding: 2px 10px;
+    margin-top: 6px;
+    margin-right: 6px;
+    background-color: #c0c0c0;
+    border: 2px outset #ffffff;
+    cursor: pointer;
+}
+
+.form-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.form-row-inline label {
+    display: inline-block;
+    width: 80px;
+}
+
+.languages-list {
+    margin-left: 10px;
+}
+
+
+.guestbook-wrapper {
+    width: 520px;
+    margin: 25px auto;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.guestbook-inner {
+    border: 1px solid #000000;
+    background-color: #ccf7ff;
+    padding: 20px 25px 25px;
+}
+
+.guestbook-title {
+    text-align: center;
+    font-size: 20px;
+    color: #0000aa;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.guestbook-labels {
+    font-size: 12px;
+}
+
+.guestbook-top {
+    margin-bottom: 15px;
+}
+
+.guestbook-top input[type="text"] {
+    display: block;
+    width: 220px;
+    margin-bottom: 6px;
+}
+
+.guestbook-textarea {
+    width: 100%;
+    height: 80px;
+}
+
+.guestbook-section-title {
+    font-weight: bold;
+    margin: 10px 0 4px;
+}
+
+.guestbook-products-select {
+    width: 160px;
+}
+
+.guestbook-products-list {
+    width: 160px;
+    height: 70px;
+    margin-top: 4px;
+}
+
+.guestbook-buttons {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.guestbook-buttons input[type="submit"],
+.guestbook-buttons input[type="reset"] {
+    width: 110px;
+    margin: 0 10px;
+}
+
+/* Бланк заказа */
+.order-form-wrapper {
+    width: 520px;
+    margin: 25px auto;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.order-form-inner {
+    border: 1px solid #000000;
+    background-color: #ccffcc;
+    padding: 20px 25px 25px;
+}
+
+.order-form-title {
+    text-align: center;
+    font-size: 20px;
+    color: #008000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.order-form-top input[type="text"] {
+    display: block;
+    width: 220px;
+    margin-bottom: 6px;
+}
+
+.order-form-labels {
+    font-size: 12px;
+}
+
+.order-products-title {
+    text-align: center;
+    font-weight: bold;
+    color: #0000aa;
+    margin: 15px 0 8px;
+}
+
+.order-products-row {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.order-product-box {
+    display: inline-block;
+    width: 110px;
+    height: 60px;
+    margin: 0 12px;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+}
+
+.order-products-checks {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-sum-title {
+    text-align: center;
+    font-weight: bold;
+    color: #0000aa;
+    margin: 10px 0 8px;
+}
+
+.order-sum-options {
+    text-align: center;
+    font-size: 12px;
+}
+
+.order-buttons {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.order-buttons input[type="submit"],
+.order-buttons input[type="reset"] {
+    width: 110px;
+    margin: 0 10px;
+}
